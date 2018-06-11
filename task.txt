@@ -1,0 +1,136 @@
+cd Desktop/
+mkdir audio files
+cd audio
+touch song{1..10}.mp3
+cd ..
+ln -s ../Desktop/audio ../Desktop/music
+cd ..
+sudo groupadd sysadmin
+sudo useradd -G sysadmin bob
+#passwd bob
+sudo useradd -G sysadmin rob
+#linux123 rob
+sudo useradd -a -G sysadmin bob -p linux123
+sudo useradd -G sysadmin bob -p linux123
+sudo useradd -G sysadmin rob -p linux123
+sudo passwd bob
+sudo passwd rob
+sudo useradd -G sysadmin max -p linux123
+id sysadmin
+id max
+sudo adduser bob managers
+sudo groupadd managers
+sudo adduser bob managers
+sudo adduser rob managers
+id bob
+id rob
+id max
+sudo groupdel bob
+sudo usermod -g sysadmin bob
+sudo usermod -g sysadmin rob
+sudo usermod -g sysadmin max
+id max
+id rob
+id bob
+sudo groupdel bob
+sudo groupdel rob
+sudo groupdel max
+man usermod 
+man usermod -s max
+usermod max -s /bin/false
+sudo usermod max -s /bin/false
+usermod -e 2018-07-09 max
+sudo usermod -e 2018-07-09 max
+date -d "30 days"
+sudo chage -l max
+sudo passwd -e b
+sudo chage -l bob
+cd home
+mkdir manager
+sudo mkdir manager
+chgrp managers manager
+sudo chgrp managers manager
+ls -l manager
+sudo chgrp managers manager
+ls -l manager
+ls -l ./home/manager
+ls -l /home/manager
+sudo chgrp managers /home/manager
+ls -l /home/manager
+sudo -R chgrp managers /home/manager
+sudo -r chgrp managers /home/manager
+sudo chgrp -R  managers /home/manager
+ls -l /home/manager
+sudo chown -R  :managers manager
+cd manager/
+ls -l
+cd ..
+cd..
+sudo chown -R :managers /home/manager
+ls -l /home/manager
+sudo chown -R :managers ~/home/manager
+sudo chown -R :managers /home/manager
+su -root
+su - root
+sudo su - root
+sudo chown -R :managers /home/manager
+ls -l /home/manager
+sudo useradd gabriel -p linux123 -u 4223
+id gabriel
+sudo tar cvfj archive.tar.bz2 /etc/hosts
+cd etc
+ls
+cd ..
+ls
+sudo grep udp /etc/services > udp_services.txt
+grep udp /etc/services
+ls
+gedit udp_services.txt 
+top
+alias
+alias --h
+alias -h
+alias [spat= "/bin/uptime"]
+alias spat= "/bin/uptime"
+sudo alias spat= "/bin/uptime"
+echo "alias spat='/bin/uptime'" >> ~/.bashrc
+spat
+gedit ~/.bashrc
+vim
+sudo apt get install vim
+sudo apt-get install vim
+vi 
+date + z%
+date --help
+host 
+host -a
+sudo lsof i
+sudo lsof -i
+netstat -l
+sudo apt-get i net-tools
+sudo apt-get install net-tools
+netstat -l
+netstat --help
+netstat -g
+cat ~/.bash_history
+cat ~/.bash_history >readme.md
+ls
+gedit readme.md
+sudo apt get-install firewall
+sudo apt-get install firewall
+sudo apt-get install firewalld
+firewall-cmd --get-default-zone
+firewall-cmd --set-default-zone=dmz
+firewall-cmd --get-active-zones
+firewall-cmd --permanent --get--zones
+firewall-cmd --get-zones --permanent
+firewall-cmd --get-zones --permanent > zones.txt
+ls
+gedit zones.txt
+firewall-cmd --add-port=8080/tcp
+firewall-cmd --list-all-zones
+firewall-cmd --list-ports
+firewall-cmd --list-ports >> zones.txt
+firewall-cmd --zone=dmz --add-forward-port=port=80:proto=tcp:toport=8080
+cat ~/.bash_history >> readme.md
+gedit readme.md 
