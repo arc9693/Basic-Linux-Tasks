@@ -26,6 +26,8 @@
 
 13. Forward the port 80/tcp to port 8080/tcp.
 
+14. Change the APT mirror using the command line.
+
   > <strong>Note:</strong> 
   >  - All tasks must be done from the terminal.
   >  - All changes should persist across reboots
