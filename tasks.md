@@ -26,4 +26,6 @@
 
 13. Forward the port 80/tcp to port 8080/tcp.
 
-  > <strong>Note:</strong> All changes should persist across reboots
+  > <strong>Note:</strong> 
+  >  - All tasks must be done from the terminal.
+  >  - All changes should persist across reboots
