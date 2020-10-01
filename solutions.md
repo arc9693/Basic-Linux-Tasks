@@ -1,3 +1,4 @@
+```
 cd Desktop/
 mkdir audio files
 cd audio
@@ -134,3 +135,4 @@ firewall-cmd --list-ports >> zones.txt
 firewall-cmd --zone=dmz --add-forward-port=port=80:proto=tcp:toport=8080
 cat ~/.bash_history >> readme.md
 gedit readme.md 
+```
